@@ -5,7 +5,19 @@
     <artifactId>in28Minutes-first-webapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-
+<distributionManagement>
+		
+		<repository>
+			<id>releases</id>
+			<name>Internal Releases</name>
+			<url>http://192.168.110.1:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://192.168.110.1:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
